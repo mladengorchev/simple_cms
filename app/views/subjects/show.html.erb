@@ -1,2 +1,8 @@
-<h1>Subjects#show</h1>
-<p>Find me in app/views/subjects/show.html.erb</p>
+<h1>Show Subject</h1>
+<ul>
+  <li>Name: <%= @subject.name %></li>
+  <li>Position: <%= @subject.position %></li>
+  <li>Visible?: <%= @subject.visible ? 'true' : 'false' %></li>
+</ul>
+<p>Created on <%= @subject.created_at %></p>
+<%= link_to("Back to list", {:action => 'index'}) %>
