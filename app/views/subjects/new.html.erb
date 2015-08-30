@@ -1,2 +1,15 @@
-<h1>Subjects#new</h1>
-<p>Find me in app/views/subjects/new.html.erb</p>
+<h1>Create a subject</h1>
+
+<%= form_for(:subject, :url => {:action => "create"}) do |f| %>
+<table>
+<tr>
+  <td>Name</td>
+  <td><%= f.text_field(:name) %></td>
+  <td>Position</td>
+  <td><%= f.text_field(:position) %></td>
+  <td>Visible</td>
+  <td><%= f.text_field(:visible) %></td>
+</tr>
+</table>
+  <%= submit_tag("Create Subject") %>
+<% end %>
