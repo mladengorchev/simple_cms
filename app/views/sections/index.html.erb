@@ -22,10 +22,10 @@
     <td><%= section.position %></td>
     <td><%= section.content_type %></td>
     <td><%= section.visible ? 'Yes' : 'No' %></td>
-    <td>
-      <%= link_to('Show', {:action => 'show', :id => section.id}, :class => 'action show') %>
-      <%= link_to('Edit', {:action => 'edit', :id => section.id}, :class => 'action edit') %>
-      <%= link_to('Delete', {:action => 'delete', :id => section.id}, :class => 'action delete') %>
+    <td class="actions">
+      <%= link_to(raw('<i class="fa fa-eye"></i> Show'), {:action => 'show', :id => section.id}, :class => 'action show') %>
+      <%= link_to(raw('<i class="fa fa-pencil"></i> Edit'), {:action => 'edit', :id => section.id}, :class => 'action edit') %>
+      <%= link_to(raw('<i class="fa fa-trash-o"></i> Delete'), {:action => 'delete', :id => section.id}, :class => 'action delete') %>
     </td>
   </tr>
   <% end %>

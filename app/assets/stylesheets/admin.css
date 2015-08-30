@@ -1,0 +1,109 @@
+/*
+  General
+*/
+
+body {
+  background-color: #e2e2e2;
+}
+
+/*
+  Notifications
+*/
+
+.successfull_notice {
+  width: 980px;
+  margin: 0 auto;
+  padding: 20px 40px;
+  background-color: #8ECC8E;
+  border-radius: 3px;
+  margin-top: 30px;
+  color: #467346;
+}
+
+/*
+  Buttons
+*/
+
+.action.new {
+  font-size: 14px;
+  padding: 10px 15px;
+  background: #333;
+  border-radius: 2px;
+  color: white;
+  text-decoration: none;
+  display: block;
+  width: 120px;
+  text-align: center;
+  margin: 30px 0;
+  text-decoration: none;
+}
+
+.actions a {
+  text-decoration: none;
+  color: #0095dd;
+  margin-right: 10px;
+}
+
+/*
+  Typography
+*/
+
+body {
+  font-family: "Arial", sans-serif;
+}
+
+/*
+  Tables
+*/
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: left;
+}
+
+table th {
+  font-weight: bold;
+}
+
+table td, table th {
+  border-bottom: 1px solid #eee;
+  padding: 10px 20px;
+}
+
+/*
+  Layout
+*/
+
+#wrapper {
+  width: 980px;
+  margin: 0 auto;
+  background: white;
+  padding: 40px;
+  border-radius: 3px;
+  margin-top: 30px;
+}
+
+/*
+  Header
+*/
+
+#header {
+  height: 60px;
+  line-height: 60px;
+  width: 100%;
+  background: #333;
+}
+
+#header h1 {
+  font-size: 30px;
+  color: white;
+  padding-left: 60px;
+}
+
+#header h1 span {
+  font-size: 20px;
+  font-weight: lighter;
+  padding-left: 20px;
+  color: #999;
+}
