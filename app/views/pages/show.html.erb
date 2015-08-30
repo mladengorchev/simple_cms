@@ -3,7 +3,8 @@
 <ul>
   <li>Name: <%= @page.name %></li>
   <li>Position: <%= @page.position %></li>
-  <li>Visible?: <%= @page.visible ? 'true' : 'false' %></li>
+  <li>Permalink: <%= @page.permalink %></li>
+  <li>Visible: <%= @page.visible ? 'true' : 'false' %></li>
 </ul>
 <p>Created on <%= @page.created_at %></p>
 <%= link_to("Back to list", {:action => 'index'}) %>

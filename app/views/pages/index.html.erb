@@ -6,14 +6,20 @@
 
 <table class="listings">
   <tr>
+    <th></th>
     <th>Page</th>
+    <th>Subject ID</th>
+    <th>Permalink</th>
     <th>Visible</th>
     <th>Position</th>
     <th>Actions</th>
   </tr>
   <% @pages.each do |page| %>
   <tr>
+    <td></td>
     <td><%= page.name %></td>
+    <td><%= page.subject_id %></td>
+    <td><%= page.permalink %></td>
     <td><%= page.visible ? 'Yes' : 'No' %></td>
     <td><%= page.position %></td>
     <!--<td><%= page.subject_id %></td>-->

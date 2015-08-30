@@ -6,15 +6,21 @@
 
 <table class="listings">
   <tr>
+    <th></th>
     <th>Sections</th>
+    <th>Page ID</th>
     <th>Position</th>
+    <th>Content Type</th>
     <th>Visible</th>
     <th>Actions</th>
   </tr>
   <% @sections.each do |section| %>
   <tr>
+    <td></td>
     <td><%= section.name %></td>
+    <td><%= section.page_id %></td>
     <td><%= section.position %></td>
+    <td><%= section.content_type %></td>
     <td><%= section.visible ? 'Yes' : 'No' %></td>
     <td>
       <%= link_to('Show', {:action => 'show', :id => section.id}, :class => 'action show') %>
