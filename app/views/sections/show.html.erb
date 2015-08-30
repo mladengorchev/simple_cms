@@ -1,0 +1,8 @@
+<h1>Show Section</h1>
+<ul>
+  <li>Name: <%= @section.name %></li>
+  <li>Position: <%= @section.position %></li>
+  <li>Visible?: <%= @section.visible ? 'true' : 'false' %></li>
+</ul>
+<p>Created on <%= @section.created_at %></p>
+<%= link_to("Back to list", {:action => 'index'}) %>
