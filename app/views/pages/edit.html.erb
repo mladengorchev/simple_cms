@@ -1,0 +1,15 @@
+<h1>Update a page</h1>
+
+<%= form_for(:page, :url => {:action => "update", :id => @page.id}) do |f| %>
+<table>
+<tr>
+  <td>Name</td>
+  <td><%= f.text_field(:name) %></td>
+  <td>Position</td>
+  <td><%= f.text_field(:position) %></td>
+  <td>Visible</td>
+  <td><%= f.text_field(:visible) %></td>
+</tr>
+</table>
+  <%= submit_tag("Update Page") %>
+<% end %>
