@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple CMS Admin | <%= @page_title %></title>
+</head>
+<body>
+
+<h1>Simple CMS Admin</h1>
+
+<!-- Notification -->
+<% if !flash[:notice].blank? %>
+  <p><%= flash[:notice] %></p>
+<% end %>
+<!-- Notification End -->
+
+<%= yield %>
+
+</body>
+</html>
