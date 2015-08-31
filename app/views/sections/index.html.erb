@@ -7,20 +7,18 @@
 <table class="listings">
   <tr>
     <th></th>
-    <th>Sections</th>
-    <th>Page ID</th>
-    <th>Position</th>
-    <th>Content Type</th>
-    <th>Visible</th>
-    <th>Actions</th>
+    <th width="200">Sections</th>
+    <th width="30">Page ID</th>
+    <th width="400">Content</th>
+    <th width="20">Visible</th>
+    <th width="350">Actions</th>
   </tr>
   <% @sections.each do |section| %>
   <tr>
-    <td></td>
+    <td><%= section.position %></td>
     <td><%= section.name %></td>
     <td><%= section.page_id %></td>
-    <td><%= section.position %></td>
-    <td><%= section.content_type %></td>
+    <td><%= truncate(section.content, length: 137) %></td>
     <td><%= section.visible ? 'Yes' : 'No' %></td>
     <td class="actions">
       <%= link_to(raw('<i class="fa fa-eye"></i> Show'), {:action => 'show', :id => section.id}, :class => 'action show') %>

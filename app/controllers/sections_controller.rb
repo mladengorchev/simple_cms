@@ -3,7 +3,7 @@ class SectionsController < ApplicationController
   layout 'admin'
 
   def index
-    @sections = Section.all
+    @sections = Section.order('position')
    end
 
   def show

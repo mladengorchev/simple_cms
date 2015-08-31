@@ -4,6 +4,7 @@
 
 <%= link_to("Add new subject", {:action => 'new'}, :class => 'action new') %>
 
+<p><%= pluralize(@subjects.size, 'subject')%> found</p>
 <table class="listings">
   <tr>
     <th></th>

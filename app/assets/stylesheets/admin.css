@@ -52,6 +52,11 @@ body {
   font-family: "Arial", sans-serif;
 }
 
+a {
+  color: #0095dd;
+  text-decoration: none;
+}
+
 /*
   Tables
 */
@@ -69,6 +74,8 @@ table th {
 table td, table th {
   border-bottom: 1px solid #eee;
   padding: 10px 20px;
+  font-size: 14px;
+  line-height: 1.5em;
 }
 
 /*
