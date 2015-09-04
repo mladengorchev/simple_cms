@@ -1,0 +1,29 @@
+<table>
+  <tr>
+    <td>Name</td>
+    <td><%= f.text_field(:name) %></td>
+  </tr>
+  <tr>
+    <td>Position</td>
+    <td><%= f.text_field(:position) %></td>
+  </tr>
+  <tr>
+    <td>Content Type</td>
+    <td>
+      <%= f.radio_button(:content_type, "text") %> Text
+      <%= f.radio_button(:content_type, "HTML") %> HTML
+    </td>
+  </tr>
+  <tr>
+    <td>Content</td>
+    <td><%= f.text_area(:content) %></td>
+  </tr>
+  <tr>
+    <td>Page ID</td>
+    <td><%= f.text_field(:page_id) %></td>
+  </tr>
+  <tr>
+    <td>Visible</td>
+    <td><%= f.check_box(:visible) %></td>
+  </tr>
+</table>

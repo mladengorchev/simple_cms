@@ -3,15 +3,6 @@
 <h1>Create a subject</h1>
 
 <%= form_for(:subject, :url => {:action => "create"}) do |f| %>
-<table>
-<tr>
-  <td>Name</td>
-  <td><%= f.text_field(:name) %></td>
-  <td>Position</td>
-  <td><%= f.text_field(:position) %></td>
-  <td>Visible</td>
-  <td><%= f.text_field(:visible) %></td>
-</tr>
-</table>
+  <%= render(:partial => 'form', :locals => {:f => f}) %>
   <%= submit_tag("Create Subject") %>
 <% end %>
